@@ -1,74 +1,118 @@
-@import url('./reset.css');
+@import url("./reset.css");
 
 body {
-    background-color: rgb(0, 0, 0);
-    color: white;
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 40px;
-    align-items: center;
-    background: rgba(56, 36, 73, 0.95);
-    backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 40px;
+  align-items: center;
+  background: rgba(56, 36, 73, 0.95);
+  backdrop-filter: blur(5px);
 }
 
-.header>.logo {
-    display: flex;
-    align-items: center;
-    padding: 0.41px 0px 1.229px 0px;
-    gap: 7.938px;
+.header > .logo {
+  display: flex;
+  align-items: center;
+  padding: 0.41px 0px 1.229px 0px;
+  gap: 7.938px;
 }
 
-.header>.logo>svg:nth-child(1) {
-    width: 45.374px;
-    height: 30.361px;
+.header > .logo > svg:nth-child(1) {
+  width: 45.374px;
+  height: 30.361px;
 }
 
-.header>.logo>svg:nth-child(2) {
-    width: 128.843px;
-    height: 22.038px;
+.header > .logo > svg:nth-child(2) {
+  width: 128.843px;
+  height: 22.038px;
 }
 
 /* menu */
 .menu {
-    display: flex;
-    width: 707px;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  width: 707px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu__button--default {
-    display: flex;
-    padding: 14px 20px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  padding: 14px 20px;
+  justify-content: center;
+  align-items: center;
 
-    color: var(--white, #FFF);
-    text-align: center;
+  color: var(--white, #fff);
+  text-align: center;
 
-    font-family: Ubuntu;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 28px;
-    letter-spacing: 0.2px;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px;
 }
 
 .menu__button--login {
-    display: flex;
-    padding: 13px 20px;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background: var(--secondary-03, #FAD277);
-    border-radius: 30px;
+  display: flex;
+  padding: 13px 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--secondary-03, #fad277);
+  border-radius: 30px;
 }
 
 .menu__button--login span {
-    color: var(--primary-00, #382449);
-    font-family: Ubuntu;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
+  color: var(--primary-00, #382449);
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+/* danisma hatti */
+.danisma-hatti-container {
+  padding: 50px 156px;
+  display: flex;
+  justify-content: space-between;
+}
+.danisma-hatti-kutu-1{
+    display: flex;
+    gap: 23px;
+    flex-direction: column;
+}
+
+.danisma-hatti-kutu-1 > .danisma-hatti-yazilar {
+  display: flex;
+  flex-direction: column;
+}
+.danisma-hatti-kutu-1 > .danisma-hatti-yazilar .text {
+  font-family: Ubuntu;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.danisma-hatti-kutu-1 > .danisma-hatti-yazilar .text-white {
+    color: var(--white, #FFF);
+}
+
+.danisma-hatti-kutu-1 > .danisma-hatti-yazilar .text-yellow {
+    color: var(--secondary-01-action, #F2AF29);
+}
+.danisma-hatti-kutu-1 > .danisma-hatti-resimler {
+    display: flex;
+    flex-direction: column;
+    
+}
+.danisma-hatti-kutu-1 > .danisma-hatti-resimler svg {
+margin-left: -14px;
+}
+.danisma-hatti-kutu-1 > .danisma-hatti-resimler > .phone {
+    
+    margin-top: -48px;
 }
