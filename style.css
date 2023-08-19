@@ -79,10 +79,10 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.danisma-hatti-kutu-1{
-    display: flex;
-    gap: 23px;
-    flex-direction: column;
+.danisma-hatti-kutu-1 {
+  display: flex;
+  gap: 23px;
+  flex-direction: column;
 }
 
 .danisma-hatti-kutu-1 > .danisma-hatti-yazilar {
@@ -98,21 +98,78 @@ body {
 }
 
 .danisma-hatti-kutu-1 > .danisma-hatti-yazilar .text-white {
-    color: var(--white, #FFF);
+  color: var(--white, #fff);
 }
 
 .danisma-hatti-kutu-1 > .danisma-hatti-yazilar .text-yellow {
-    color: var(--secondary-01-action, #F2AF29);
+  color: var(--secondary-01-action, #f2af29);
 }
 .danisma-hatti-kutu-1 > .danisma-hatti-resimler {
-    display: flex;
-    flex-direction: column;
-    
+  display: flex;
+  flex-direction: column;
 }
+
 .danisma-hatti-kutu-1 > .danisma-hatti-resimler svg {
-margin-left: -14px;
+  margin-left: -14px;
 }
 .danisma-hatti-kutu-1 > .danisma-hatti-resimler > .phone {
-    
-    margin-top: -48px;
+  margin-top: -48px;
+}
+.danisma-hatti-kutu-2 > .danisma-hatti-yazilar .text {
+  font-family: Ubuntu;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px;
+}
+.danisma-hatti-kutu-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.danisma-hatti-kutu-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.danisma-hatti-kutu-2 > .danisma-hatti-resimler {
+  display: flex;
+  
+}
+
+.danisma-hatti-kutu-3 > .danisma-hatti-yazilar .text {
+  font-family: Ubuntu;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px;
+}
+.danisma-hatti-kutu-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.danisma-hatti-kutu-3 > .danisma-hatti-resimler {
+  display: flex;
+  justify-content: center;
+}
+.danisma-hatti-kutu-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.danisma-hatti-kutu-4 > .danisma-hatti-resimler {
+  display: flex;
+  justify-content: center;
+}
+
+.danisma-hatti-kutu-4 > .danisma-hatti-yazilar .text {
+  font-family: Ubuntu;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px;
 }
