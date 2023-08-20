@@ -78,6 +78,7 @@ body {
   padding: 50px 156px;
   display: flex;
   justify-content: space-between;
+  background: var(--primary-01, #533165);
 }
 .danisma-hatti-kutu-1 {
   display: flex;
@@ -122,12 +123,11 @@ body {
   font-weight: 700;
   line-height: 34px;
 }
-.danisma-hatti-kutu-1{
+.danisma-hatti-kutu-1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 
 .danisma-hatti-kutu-2 {
   display: flex;
@@ -136,7 +136,6 @@ body {
 }
 .danisma-hatti-kutu-2 > .danisma-hatti-resimler {
   display: flex;
-  
 }
 
 .danisma-hatti-kutu-3 > .danisma-hatti-yazilar .text {
@@ -172,4 +171,149 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 34px;
+}
+
+body {
+  background-image: url(./images/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-color: lightgray;
+  background-size: cover;
+}
+
+.banner {
+  height: 807px;
+}
+
+.banner > .banner-frame {
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 50px 50px 50px 0px;
+  background: rgba(83, 49, 101, 0.8);
+  width: 385px;
+  height: 260px;
+  margin-top: 460px;
+  margin-left: 39px;
+  position: relative;
+}
+
+.banner-frame > .banner-frame-text {
+  font-family: Ubuntu;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 120% */
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-frame > .banner-frame-text .text-white {
+  color: var(--white, #fff);
+}
+
+.banner-frame > .banner-frame-text .text-yellow {
+  color: var(--secondary-01-action, #f2af29);
+}
+
+.banner-frame > img {
+  position: absolute;
+  right: -36.781px;
+  top: -25px;
+}
+
+.hizmetler-container {
+  height: 950px;
+  flex-shrink: 0;
+
+  display: flex;
+
+}
+
+.hizmetler-wrapper {
+  padding: 224px 160px;
+  background: var(--primary-04, #fcf8fd);
+}
+
+.hizmetler-wrapper > .text {
+  align-self: stretch;
+  color: var(--secondary-01-action, #f2af29);
+
+  /* Web/P Class Medium/Bold */
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  text-transform: capitalize;
+}
+.hizmet {
+  display: flex;
+  width: 284px;
+  height: 408px;
+  padding: 15px 15px 25px 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: var(--white, #fff);
+
+  /* SelectionDrop00 */
+  box-shadow: 0px 3px 15px 0px rgba(139, 73, 156, 0.06);
+}
+
+.hizmet > .hizmet-resim {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hizmet > .hizmet-resim img {
+  flex: 1 0 0;
+  align-self: stretch;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hizmet > .hizmet-yazı .text-1 {
+  color: var(--primary-01, #533165);
+
+  /* Web/H3/Medium */
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
+  letter-spacing: 0.2px;
+  width: 214px;
+  display: inline-block;
+}
+.hizmet > .hizmet-yazı .text-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* İkinci satıra kadar göster */
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+  color: var(--text-1, #5f5a67);
+  text-overflow: ellipsis;
+  whitespace: nowrap;
+
+  /* Web/P Class Medium/Regular */
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
 }
