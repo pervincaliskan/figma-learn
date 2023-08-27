@@ -7,3 +7,23 @@ const swiper = new Swiper(".mySwiper", {
     clickable: true,
   }
 })
+
+const hamburgerButtonEl = document.getElementById('hamburger-button');
+const menuEl = document.querySelector('.menu')
+
+function handleHamburgerButtonClick(event) {
+  if (!menuEl) return;
+  const isHidden = menuEl.classList.contains('d-none');
+
+  if (!isHidden) {
+    menuEl.classList.remove('d-flex')
+    menuEl.classList.add('d-none')
+  } else {
+    menuEl.classList.remove('d-none')
+    menuEl.classList.add('d-flex')
+  }
+}
+
+if (hamburgerButtonEl) {
+  hamburgerButtonEl.addEventListener('click', handleHamburgerButtonClick)
+}
