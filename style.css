@@ -438,6 +438,12 @@ body {
   letter-spacing: 0.32px;
 }
 
+
+
+.tum-hizmetler img {
+  object-fit: none;
+}
+
 /* sass/scss nested
 .tum-hizmetler {
   .description {
@@ -447,11 +453,6 @@ body {
   }
 }
 */
-
-.tum-hizmetler img {
-  object-fit: none;
-}
-
 .kisiselsaglik {
   background: var(--secondary-04, #FFFAEF);
 
