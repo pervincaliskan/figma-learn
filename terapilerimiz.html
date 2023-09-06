@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terapilerimiz</title>
+
+  <link rel="stylesheet" href="./style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <header class="header d-flex flex-column flex-md-row">
+    <div class="logo justify-content-between justify-content-md-start">
+
+      <button id="hamburger-button" class="d-md-none d-inline-block">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M18 16H2M18 10H2M18 4H2" stroke="white" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <a href="./index.html">
+        <svg class="d-none d-md-inline-block" xmlns="http://www.w3.org/2000/svg" width="46" height="31"
+          viewBox="0 0 46 31" fill="none">
+          <path
+            d="M11.416 12.5743C11.5184 12.6834 11.6545 12.8252 11.8501 13.0261L17.1974 13.0433L14.6507 10.4369C14.6507 10.4369 14.2303 10.0054 14.1141 9.8854C14.1049 9.87605 14.0942 9.86826 14.085 9.85891C14.0805 9.85424 14.0774 9.84801 14.0728 9.84333C13.469 9.22173 13.1373 8.39915 13.1403 7.52516C13.1465 5.71799 14.5926 4.252 16.3658 4.25823C17.1118 4.26134 17.8333 4.52775 18.4035 5.00914L18.8988 5.51702C18.8988 5.51702 18.9019 5.51858 18.9019 5.52013L21.4318 8.10938C22.1671 8.86341 23.3625 8.86497 24.1024 8.11561L26.7149 5.46561C26.7271 5.45315 26.7408 5.44068 26.7531 5.42666L27.0236 5.15091C27.6198 4.59941 28.3887 4.29718 29.1943 4.30029C30.9676 4.30652 32.4061 5.78031 32.3999 7.58748C32.3969 8.42564 32.085 9.22173 31.5149 9.83399L31.4017 9.94927L28.32 13.0776L33.6565 13.0947L34.0524 12.6927C34.0998 12.646 34.1472 12.5993 34.1915 12.5525C34.2053 12.537 34.2206 12.5214 34.2343 12.5074C35.4817 11.18 36.1727 9.43828 36.1788 7.59994C36.191 3.66934 33.0634 0.463162 29.2081 0.450698C27.4349 0.444467 25.7396 1.11904 24.4509 2.33421C24.4478 2.33733 24.4433 2.342 24.4387 2.34512C24.321 2.45417 24.2078 2.56945 24.0978 2.68941C24.0932 2.69409 24.0886 2.69876 24.084 2.70344L22.777 4.03077L21.6183 2.8452C21.4073 2.59906 21.1811 2.36848 20.9487 2.16284C20.9335 2.14882 20.9182 2.1348 20.9014 2.12078C19.6448 1.02245 18.0397 0.414866 16.3796 0.410193C12.5228 0.397729 9.37677 3.58521 9.36454 7.51426C9.35843 9.41491 10.08 11.2049 11.3946 12.5557C11.4022 12.5634 11.4099 12.5681 11.4175 12.5743H11.416Z"
+            fill="#F7C656" />
+          <path
+            d="M42.1484 13.6088L29.9114 26.0518L25.4218 21.4575L32.6019 14.1681L27.2653 14.1509L22.7558 18.7296L18.2523 14.1229L12.9051 14.1058L20.0791 21.4466L15.4732 26.1219L3.22865 13.5636C2.49336 12.8096 1.29642 12.8049 0.558077 13.5558C-0.181795 14.3052 -0.186381 15.5235 0.550434 16.2775L14.128 30.2021C14.4811 30.5635 14.9611 30.7692 15.461 30.7707C15.9624 30.7707 16.4439 30.5698 16.7986 30.2099L22.7451 24.1745L28.5693 30.1335C28.9224 30.495 29.4009 30.6975 29.9023 30.6991H29.9053C30.4067 30.6991 30.8867 30.4981 31.2414 30.1382L44.8205 16.332C45.5588 15.5811 45.5588 14.3613 44.8205 13.6104C44.0837 12.8579 42.8883 12.8579 42.1499 13.6104L42.1484 13.6088Z"
+            fill="#F2AF29" />
+        </svg>
+
+        <svg class="d-none d-md-inline-block" xmlns="http://www.w3.org/2000/svg" width="130" height="23"
+          viewBox="0 0 130 23" fill="none">
+          <path
+            d="M0.313664 0.8396L3.7608 0.850505L8.80691 16.9032L13.801 0.881663L17.0984 0.892569L21.9947 16.9453L27.1386 0.925285L30.5858 0.93619L23.6258 22.2967L20.3284 22.2858L15.4321 6.23308L10.438 22.2546L7.14067 22.2437L0.312134 0.8396H0.313664Z"
+            fill="white" />
+          <path
+            d="M43.4158 19.9161C43.0245 20.4349 42.5139 20.8898 41.9132 21.2855C40.8614 21.985 39.3909 22.6518 37.263 22.6456C33.0668 22.6316 29.7802 19.2618 29.7924 14.9854C29.8062 10.7089 33.1126 7.3594 37.159 7.37186C41.236 7.38432 44.1939 10.4191 44.1802 14.5725C44.1802 15.0305 44.1175 15.3967 44.0869 15.6724L44.0258 16.0993L32.9353 16.0634C33.2594 18.0498 34.9929 19.7354 37.4204 19.7432C38.7091 19.7479 39.7593 19.2618 40.4808 18.7758C40.9012 18.5016 41.2925 18.1666 41.6227 17.7709L43.4143 19.9146L43.4158 19.9161ZM41.0372 13.4929C40.5939 11.5066 39.2793 10.1278 37.1514 10.12C34.8737 10.1122 33.5498 11.4832 32.9445 13.4664L41.0372 13.4929Z"
+            fill="white" />
+          <path
+            d="M47.3704 0.989258L50.6677 1.00016L50.6402 10.0111L60.9816 10.0438L61.0091 1.03288L64.3065 1.04378L64.2407 22.4261L60.9434 22.4152L60.9725 13.0989L50.6311 13.0662L50.602 22.3825L47.3047 22.3716L47.3704 0.989258Z"
+            fill="white" />
+          <path
+            d="M81.0315 20.0363C80.6402 20.555 80.1296 21.0115 79.5289 21.4057C78.4772 22.1052 77.0066 22.772 74.8787 22.7657C70.6825 22.7517 67.3959 19.3819 67.4081 15.1055C67.4219 10.829 70.7284 7.47951 74.7747 7.49198C78.8517 7.50444 81.8096 10.5392 81.7959 14.6926C81.7959 15.1507 81.7332 15.5168 81.7026 15.7925L81.6415 16.2194L70.551 16.1836C70.8751 18.1699 72.6086 19.8555 75.0361 19.8633C76.3248 19.868 77.375 19.3819 78.0965 18.8959C78.5169 18.6217 78.9082 18.2867 79.2384 17.891L81.03 20.0347L81.0315 20.0363ZM78.6529 13.613C78.2096 11.6267 76.895 10.2479 74.7671 10.2401C72.4894 10.2323 71.1656 11.6033 70.5602 13.5865L78.6529 13.613Z"
+            fill="white" />
+          <path
+            d="M92.4186 20.3773C92.1175 20.8353 91.7261 21.231 91.2752 21.5956C90.4635 22.2032 89.3231 22.8107 87.7654 22.8061C84.8884 22.7967 82.9761 20.8057 82.9822 18.514C82.9898 16.0697 84.6439 14.3949 87.1921 13.9447L92.44 13.0442C92.4446 11.4863 91.2492 10.2914 89.4515 10.2852C88.2821 10.282 87.4123 10.7977 86.7213 11.2838C86.3315 11.558 85.9998 11.8929 85.6986 12.2575L83.7557 10.2665C84.147 9.74767 84.6286 9.29121 85.1988 8.89706C86.1603 8.19755 87.5407 7.52921 89.4591 7.53544C93.0561 7.54635 95.4469 9.9985 95.4362 13.2062L95.4072 22.5225L92.4094 22.5132L92.4156 20.3742L92.4186 20.3773ZM92.4339 15.4901L88.2347 16.241C86.7045 16.5106 85.983 17.2724 85.9799 18.2196C85.9768 19.2883 86.8436 20.2075 88.3723 20.2121C90.6209 20.2199 92.4247 18.3925 92.4324 15.9482V15.4901H92.4339Z"
+            fill="white" />
+          <path d="M98.7718 1.15283L101.77 1.16218L101.704 22.5445L98.7061 22.5351L98.7718 1.15283Z" fill="white" />
+          <path
+            d="M106.536 10.7994L103.838 10.7901L103.847 7.88767L105.495 7.89235C106.424 7.89546 106.845 7.43899 106.849 6.21604L106.858 3.0083L109.556 3.01609L109.541 7.90325L112.839 7.91416L112.829 10.8165L109.532 10.8056L109.511 17.6791C109.506 19.2059 110.192 19.9724 111.602 19.977C112.051 19.977 112.441 19.8882 112.771 19.7667L113.251 19.5237L113.242 22.4261L112.612 22.6691C112.222 22.7906 111.683 22.8794 110.993 22.8779C108.117 22.8685 106.502 21.1829 106.513 17.9767L106.534 10.7978L106.536 10.7994Z"
+            fill="white" />
+          <path
+            d="M116.006 1.20728L119.004 1.21662L118.976 10.0749C119.277 9.61687 119.638 9.22116 120.089 8.85661C120.84 8.24747 121.951 7.64144 123.48 7.64611C126.777 7.65702 129.168 10.078 129.155 14.0787L129.129 22.6316L126.132 22.6223L126.158 14.0694C126.164 11.9008 124.82 10.5516 122.871 10.5454C120.622 10.5376 118.97 12.2139 118.962 14.6567L118.938 22.5989L115.94 22.5896L116.006 1.20728Z"
+            fill="white" />
+        </svg>
+      </a>
+
+      <svg class="d-md-none d-inline-block" width="152" height="28" viewBox="0 0 152 28" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_5867_34104)">
+          <path
+            d="M9.5262 11.1097C9.61166 11.2017 9.72519 11.3214 9.88847 11.4909L14.3505 11.5054L12.2254 9.30625C12.2254 9.30625 11.8746 8.94214 11.7776 8.84092C11.77 8.83304 11.7611 8.82647 11.7534 8.81858C11.7496 8.81464 11.747 8.80938 11.7432 8.80543C11.2393 8.28095 10.9625 7.58691 10.9651 6.84948C10.9702 5.32468 12.1769 4.08774 13.6566 4.093C14.2791 4.09563 14.8812 4.32041 15.357 4.72658L15.7703 5.15511C15.7703 5.15511 15.7728 5.15642 15.7728 5.15774L17.884 7.34241C18.4975 7.97862 19.4951 7.97994 20.1125 7.34767L22.2925 5.11173C22.3027 5.10121 22.3142 5.0907 22.3244 5.07887L22.5501 4.8462C23.0476 4.38087 23.6893 4.12586 24.3615 4.12849C25.8412 4.13375 27.0415 5.37725 27.0364 6.90206C27.0339 7.60925 26.7737 8.28095 26.2979 8.79755L26.2035 8.89482L23.6319 11.5343L28.085 11.5488L28.4154 11.2096C28.4549 11.1702 28.4945 11.1308 28.5315 11.0913C28.5429 11.0782 28.5557 11.065 28.5672 11.0532C29.6081 9.93326 30.1846 8.46367 30.1897 6.91257C30.1999 3.59613 27.5901 0.890915 24.373 0.880399C22.8933 0.875141 21.4786 1.44431 20.4033 2.46961C20.4007 2.47224 20.3969 2.47618 20.3931 2.47881C20.2949 2.57083 20.2005 2.6681 20.1086 2.76931C20.1048 2.77326 20.101 2.7772 20.0971 2.78115L19.0065 3.90109L18.0396 2.90076C17.8636 2.69307 17.6748 2.49853 17.4809 2.32502C17.4681 2.31319 17.4554 2.30136 17.4413 2.28953C16.3928 1.36281 15.0534 0.850166 13.6681 0.846222C10.4497 0.835706 7.82454 3.52514 7.81433 6.84028C7.80923 8.44395 8.41132 9.95429 9.50834 11.094C9.51472 11.1005 9.52109 11.1045 9.52747 11.1097H9.5262Z"
+            fill="#F7C656" />
+          <path
+            d="M35.171 11.9824L24.9598 22.4812L21.2133 18.6048L27.2048 12.4543L22.7517 12.4399L18.9886 16.3031L15.2307 12.4162L10.7686 12.4018L16.7551 18.5956L12.9117 22.5404L2.69405 11.9443C2.08048 11.3081 1.08168 11.3042 0.46556 11.9377C-0.151834 12.57 -0.15566 13.5979 0.459182 14.2341L11.7891 25.983C12.0838 26.288 12.4843 26.4615 12.9014 26.4628C13.3198 26.4628 13.7217 26.2932 14.0176 25.9896L18.9797 20.8973L23.8398 25.9252C24.1344 26.2301 24.5337 26.401 24.9521 26.4023H24.9547C25.3731 26.4023 25.7736 26.2328 26.0695 25.9291L37.4007 14.2802C38.0169 13.6466 38.0169 12.6173 37.4007 11.9837C36.7859 11.3488 35.7884 11.3488 35.1723 11.9837L35.171 11.9824Z"
+            fill="#F2AF29" />
+          <path
+            d="M44.4881 5.42725L47.3646 5.43645L51.5753 18.9809L55.7427 5.46274L58.4942 5.47194L62.58 19.0164L66.8724 5.49954L69.7489 5.50874L63.9411 23.5317L61.1896 23.5225L57.1038 9.978L52.9364 23.4962L50.1849 23.487L44.4868 5.42725H44.4881Z"
+            fill="white" />
+          <path
+            d="M80.4551 21.5232C80.1285 21.961 79.7025 22.3448 79.2011 22.6787C78.3235 23.2689 77.0964 23.8315 75.3207 23.8262C71.8192 23.8144 69.0766 20.9712 69.0869 17.3629C69.0983 13.7546 71.8575 10.9285 75.234 10.939C78.636 10.9495 81.1043 13.5101 81.0929 17.0145C81.0929 17.401 81.0406 17.7099 81.0151 17.9426L80.964 18.3027L71.7095 18.2725C71.9799 19.9485 73.4265 21.3708 75.4521 21.3773C76.5275 21.3813 77.4038 20.9712 78.0059 20.561C78.3567 20.3297 78.6832 20.0471 78.9588 19.7132L80.4538 21.5219L80.4551 21.5232ZM78.4702 16.1036C78.1003 14.4276 77.0033 13.2643 75.2276 13.2577C73.327 13.2512 72.2223 14.4079 71.7172 16.0813L78.4702 16.1036Z"
+            fill="white" />
+          <path
+            d="M83.7551 5.55347L86.5065 5.56267L86.4836 13.1657L95.1131 13.1933L95.136 5.59027L97.8875 5.59947L97.8326 23.6408L95.0812 23.6316L95.1054 15.771L86.4759 15.7434L86.4517 23.604L83.7002 23.5948L83.7551 5.55347Z"
+            fill="white" />
+          <path
+            d="M111.844 21.6243C111.517 22.062 111.091 22.4472 110.59 22.7797C109.712 23.3699 108.485 23.9325 106.71 23.9273C103.208 23.9155 100.466 21.0722 100.476 17.464C100.487 13.8557 103.246 11.0296 106.623 11.0401C110.025 11.0506 112.493 13.6112 112.482 17.1156C112.482 17.5021 112.429 17.811 112.404 18.0436L112.353 18.4038L103.098 18.3736C103.369 20.0496 104.815 21.4718 106.841 21.4784C107.916 21.4823 108.793 21.0722 109.395 20.6621C109.746 20.4308 110.072 20.1481 110.348 19.8143L111.843 21.623L111.844 21.6243ZM109.859 16.2047C109.489 14.5287 108.392 13.3654 106.616 13.3588C104.716 13.3522 103.611 14.509 103.106 16.1823L109.859 16.2047Z"
+            fill="white" />
+          <path
+            d="M121.346 21.9122C121.095 22.2987 120.768 22.6326 120.392 22.9402C119.714 23.4528 118.763 23.9655 117.463 23.9615C115.062 23.9536 113.466 22.2737 113.472 20.3401C113.478 18.2777 114.858 16.8646 116.985 16.4847L121.364 15.725C121.368 14.4105 120.37 13.4023 118.87 13.397C117.894 13.3944 117.168 13.8295 116.592 14.2396C116.266 14.4709 115.99 14.7536 115.738 15.0611L114.117 13.3812C114.444 12.9435 114.845 12.5584 115.321 12.2258C116.124 11.6356 117.275 11.0717 118.876 11.0769C121.878 11.0861 123.873 13.1551 123.864 15.8617L123.84 23.7223L121.338 23.7144L121.343 21.9096L121.346 21.9122ZM121.359 17.7887L117.855 18.4223C116.578 18.6497 115.976 19.2925 115.973 20.0917C115.97 20.9934 116.694 21.769 117.969 21.7729C119.846 21.7795 121.351 20.2376 121.357 18.1752V17.7887H121.359Z"
+            fill="white" />
+          <path d="M126.647 5.69141L129.149 5.69929L129.094 23.7406L126.592 23.7327L126.647 5.69141Z" fill="white" />
+          <path
+            d="M133.126 13.8308L130.875 13.8229L130.882 11.374L132.257 11.378C133.033 11.3806 133.384 10.9955 133.388 9.96361L133.395 7.25708L135.647 7.26365L135.634 11.3872L138.385 11.3964L138.378 13.8453L135.626 13.8361L135.608 19.6356C135.605 20.9238 136.177 21.5705 137.354 21.5745C137.729 21.5745 138.054 21.4995 138.329 21.397L138.73 21.1919L138.722 23.6408L138.197 23.8459C137.871 23.9484 137.421 24.0233 136.846 24.022C134.445 24.0141 133.098 22.5919 133.107 19.8867L133.125 13.8295L133.126 13.8308Z"
+            fill="white" />
+          <path
+            d="M141.029 5.73755L143.53 5.74544L143.507 13.2196C143.758 12.8331 144.059 12.4993 144.436 12.1917C145.062 11.6777 145.989 11.1664 147.265 11.1703C150.016 11.1795 152.011 13.2222 152.001 16.5978L151.98 23.8144L149.478 23.8065L149.5 16.5899C149.505 14.7602 148.384 13.6218 146.757 13.6166C144.881 13.61 143.502 15.0244 143.496 17.0855L143.475 23.7868L140.974 23.7789L141.029 5.73755Z"
+            fill="white" />
+        </g>
+        <defs>
+          <clipPath id="clip0_5867_34104">
+            <rect width="152" height="27" fill="white" transform="translate(0 0.5)" />
+          </clipPath>
+        </defs>
+      </svg>
+
+
+      <a class="d-md-none d-inline-block" href="./index.html" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+          <g clip-path="url(#clip0_5867_34118)">
+            <path
+              d="M0 30L2.10077 22.5463C0.750141 20.2532 0.0385894 17.6442 0.0385894 14.9647C0.0385894 6.71284 6.7588 0 15.0198 0C23.2807 0 30.0009 6.71284 30.0009 14.9647C30.0009 23.2166 23.2807 29.9295 15.0198 29.9295C12.4456 29.9295 9.92596 29.2714 7.69624 28.0219L0 30ZM8.08873 25.2991L8.54709 25.5793C10.4907 26.7649 12.7289 27.391 15.0188 27.391C21.8783 27.391 27.4587 21.8167 27.4587 14.9647C27.4587 8.11276 21.8783 2.53847 15.0198 2.53847C8.1612 2.53847 2.57985 8.11276 2.57985 14.9647C2.57985 17.3518 3.2594 19.6703 4.54414 21.6691L4.85286 22.1496L3.64247 26.4424L8.08873 25.2991Z"
+              fill="white" />
+            <path
+              d="M10.8107 8.00001L9.83843 7.94736C9.53348 7.93044 9.23323 8.03292 9.00264 8.23318C8.53109 8.64215 7.77813 9.4319 7.54659 10.4623C7.20117 11.9976 7.73483 13.878 9.11558 15.7583C10.4963 17.6387 13.0686 20.6472 17.6175 21.9324C19.0839 22.3461 20.2369 22.0669 21.1263 21.499C21.8313 21.0487 22.3169 20.3257 22.492 19.5087L22.6473 18.7847C22.6962 18.5544 22.5795 18.3212 22.3659 18.2225L19.0811 16.7098C18.8674 16.612 18.6152 16.6741 18.4712 16.8593L17.1817 18.529C17.0838 18.655 16.9172 18.7048 16.7666 18.6522C15.8838 18.3419 12.9246 17.1047 11.3011 13.9805C11.2305 13.8451 11.2484 13.6805 11.3481 13.5649L12.5811 12.1405C12.7072 11.9948 12.7392 11.7908 12.663 11.614L11.2465 8.30463C11.1712 8.12882 11.0018 8.01035 10.8107 8.00001Z"
+              fill="white" />
+          </g>
+          <defs>
+            <clipPath id="clip0_5867_34118">
+              <rect width="30" height="30" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+    </div>
+
+    <div
+      class="menu d-none d-md-flex flex-grow-1 d-flex flex-wrap flex-column flex-sm-row justify-content-center justify-content-md-end">
+      <button class="menu__button menu__button--default">
+        Hizmetlerimiz
+      </button>
+      <button class="menu__button menu__button--default">
+        Terapilerimiz
+      </button>
+      <button class="menu__button menu__button--default">Kurumsal</button>
+      <button class="menu__button menu__button--login">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+          <path
+            d="M16.9996 18.5L16.9999 15.5003C17 13.8433 15.6568 12.5 13.9999 12.5H6.00046C4.34374 12.5 3.00065 13.8429 3.00046 15.4997L3.00012 18.5M13.0001 5.5C13.0001 7.15685 11.657 8.5 10.0001 8.5C8.34327 8.5 7.00012 7.15685 7.00012 5.5C7.00012 3.84315 8.34327 2.5 10.0001 2.5C11.657 2.5 13.0001 3.84315 13.0001 5.5Z"
+            stroke="#382449" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span>Giriş Yap</span>
+      </button>
+      <button class="menu__button menu__button--default">TR</button>
+    </div>
+  </header>
+
+ 
+  <div class="terapiler-wrapper terapi-container mb-4">
+    <div class="row g-2"> 
+
+    </div>
+  </div>
+      <!-- <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <div class="terapi-img-div text-center card-img-container">
+              <img src="./images/kokteyl-img.png" alt="image" width="159" height="197">
+            </div>
+            <div class="terapi-description my-2">
+              <h3><b>Glutatyon Terapisi</b></h3>
+              <p class="subtitle">Sıklıkla yorgun ve stresli hissediyorsanız, yaşlanma sürecinizi yavaşlatmak ve
+                hastalıkları önlemek istiyorsanız Glutatyon Terapisi sizin için iyi bir seçim olabilir.</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <button class="btn light-purple-btn d-flex align-items-center justify-content-center">
+                <p class="font-size-14 m-0 d-none d-lg-block"> Daha Fazla Bilgi</p> <i
+                  class="fa fa-chevron-right ps-lg-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <div class="terapi-img-div text-center card-img-container">
+              <img src="./images/kokteyl-img.png" alt="image" width="159" height="197">
+            </div>
+            <div class="terapi-description my-2">
+              <h3><b>Glutatyon Terapisi</b></h3>
+              <p class="subtitle">Sıklıkla yorgun ve stresli hissediyorsanız, yaşlanma sürecinizi yavaşlatmak ve
+                hastalıkları önlemek istiyorsanız Glutatyon Terapisi sizin için iyi bir seçim olabilir.</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <button class="btn light-purple-btn d-flex align-items-center justify-content-center">
+                <p class="font-size-14 m-0 d-none d-lg-block"> Daha Fazla Bilgi</p> <i
+                  class="fa fa-chevron-right ps-lg-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <div class="terapi-img-div text-center card-img-container">
+              <img src="./images/kokteyl-img.png" alt="image" width="159" height="197">
+            </div>
+            <div class="terapi-description my-2">
+              <h3><b>Glutatyon Terapisi</b></h3>
+              <p class="subtitle">Sıklıkla yorgun ve stresli hissediyorsanız, yaşlanma sürecinizi yavaşlatmak ve
+                hastalıkları önlemek istiyorsanız Glutatyon Terapisi sizin için iyi bir seçim olabilir.</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <button class="btn light-purple-btn d-flex align-items-center justify-content-center">
+                <p class="font-size-14 m-0 d-none d-lg-block"> Daha Fazla Bilgi</p> <i
+                  class="fa fa-chevron-right ps-lg-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <div class="terapi-img-div text-center card-img-container">
+              <img src="./images/kokteyl-img.png" alt="image" width="159" height="197">
+            </div>
+            <div class="terapi-description my-2">
+              <h3><b>Glutatyon Terapisi</b></h3>
+              <p class="subtitle">Sıklıkla yorgun ve stresli hissediyorsanız, yaşlanma sürecinizi yavaşlatmak ve
+                hastalıkları önlemek istiyorsanız Glutatyon Terapisi sizin için iyi bir seçim olabilir.</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <button class="btn light-purple-btn d-flex align-items-center justify-content-center">
+                <p class="font-size-14 m-0 d-none d-lg-block"> Daha Fazla Bilgi</p> <i
+                  class="fa fa-chevron-right ps-lg-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <div class="terapi-img-div text-center card-img-container">
+              <img src="./images/kokteyl-img.png" alt="image" width="159" height="197">
+            </div>
+            <div class="terapi-description my-2">
+              <h3><b>Glutatyon Terapisi</b></h3>
+              <p class="subtitle">Sıklıkla yorgun ve stresli hissediyorsanız, yaşlanma sürecinizi yavaşlatmak ve
+                hastalıkları önlemek istiyorsanız Glutatyon Terapisi sizin için iyi bir seçim olabilir.</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <button class="btn light-purple-btn d-flex align-items-center justify-content-center">
+                <p class="font-size-14 m-0 d-none d-lg-block"> Daha Fazla Bilgi</p> <i
+                  class="fa fa-chevron-right ps-lg-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <div class="terapi-img-div text-center card-img-container">
+              <img src="./images/kokteyl-img.png" alt="image" width="159" height="197">
+            </div>
+            <div class="terapi-description my-2">
+              <h3><b>Glutatyon Terapisi</b></h3>
+              <p class="subtitle">Sıklıkla yorgun ve stresli hissediyorsanız, yaşlanma sürecinizi yavaşlatmak ve
+                hastalıkları önlemek istiyorsanız Glutatyon Terapisi sizin için iyi bir seçim olabilir.</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <button class="btn light-purple-btn d-flex align-items-center justify-content-center">
+                <p class="font-size-14 m-0 d-none d-lg-block"> Daha Fazla Bilgi</p> <i
+                  class="fa fa-chevron-right ps-lg-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div> --> 
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+
+  <script src="./js/terapilerimiz.js"></script>
+
+
+</body>
+
+</html>
