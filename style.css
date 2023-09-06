@@ -460,3 +460,154 @@ body {
     background: var(--primary-04, #FCF8FD);
   }
 }
+
+.footer {
+  background-color: #382449;
+
+  & ul {
+    list-style: unset;
+  }
+
+  & a {
+    color: inherit !important;
+    opacity: .7;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.nav-footer-item {
+  padding: 12px;
+  flex-flow: column;
+}
+
+
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.p-4 {
+  padding: 1.5rem !important;
+}
+
+/*Slider Card*/
+/* Temel stil ayarları */
+.slider-container {
+  position: relative;
+  width: 270px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 270px;
+  margin-right: 10px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Sağ ve sol ok butonlarının stil ayarları */
+#prev-btn,
+#next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: white;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+#prev-btn {
+  left: 0;
+}
+
+#next-btn {
+  right: 0;
+}
+
+.slider-wrap {
+  background: var(--Primary01, #533165);
+}
+
+.slider .slide {
+  border-radius: 16px;
+  overflow: hidden;
+  margin-block: 48px;
+}
+
+.terapi-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.terapi-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.terapi-card {
+  width: calc(25% - 10px);
+  /* 4 kartı yan yana sığdırmak için */
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.terapi-description p {
+  overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+           line-clamp: 3; 
+   -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 768px) {
+  .terapi-card {
+    width: calc(50% - 10px);
+    /* Ekran daraldığında 2 kartı yan yana sığdırmak için */
+  }
+}
+
+.card-body:hover .light-purple-btn {
+  background: #F2AF29;
+  color: white;
+}
+
+.card-body .btn {
+  height: 20px;
+  white-space: nowrap;
+  padding: 13px 20px;
+  color: #fff;
+  background: var(--Primary04, #FCF8FD);
+  border-radius: 30px;
+  transition: all 300ms ease-in-out;
+
+  color: var(--Primary02-action, #8B499C);
+  text-align: center;
+
+  /* Web/P Class Small/Bold */
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  /* 142.857% */
+}
