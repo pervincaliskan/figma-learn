@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UrunDetay</title>
+</head>
+<body>
+  urun detay
+
+  <script>
+    const urunId = new URLSearchParams(window.location.search).get('urunId')
+    const h1 = `<h1>${urunId}<h1/>`
+      document.body.innerHTML += h1
+  </script>
+</body>
+</html>
