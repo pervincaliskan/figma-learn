@@ -52,3 +52,10 @@ table {
 button {
 	all: unset;
 }
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+}
