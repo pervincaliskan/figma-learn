@@ -20,11 +20,12 @@ function renderTerapiler(terapilerDataList) {
   console.log(row)
 
   let htmlRaw = '';
-
-  for (let index = 0; index < terapilerDataList.length; index++) {
-    const terapi = terapilerDataList[index];
+  const terapilerDataListFilteredHaveImages = terapilerDataList.filter((terapi) => terapi.mediaDetails?.[0]?.mediaUrlFull)
+  const terapilerDataUniquList = terapilerDataListFilteredHaveImages.filter(x => x.productSpecs.length)
+  for (let index = 0; index < terapilerDataUniquList.length; index++) {
+    const terapi = terapilerDataUniquList[index];
     
-    const image = terapi.mediaDetails[0].mediaUrlFull;
+    const image = terapi.mediaDetails?.[0]?.mediaUrlFull;
     const name = terapi.name;
     const description = terapi.description;
     const newPage = "/terapiler-urun-detay.html?urunId=" + terapi.id;
@@ -60,7 +61,6 @@ async function renderTerapilerPage() {
   const terapilerResponse = await getTherapies();
   const terapilerDataList = terapilerResponse.dataList;
   console.log('terapilerDataList', terapilerDataList)
-
 
 
   renderTerapiler(terapilerDataList)

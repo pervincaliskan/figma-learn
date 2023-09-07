@@ -575,10 +575,11 @@ video {
 
 .terapi-description p {
   overflow: hidden;
-   display: -webkit-box;
-   -webkit-line-clamp: 3; /* number of lines to show */
-           line-clamp: 3; 
-   -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 @media screen and (max-width: 768px) {
@@ -610,4 +611,71 @@ video {
   font-weight: 700;
   line-height: 20px;
   /* 142.857% */
+}
+
+
+.terapi-detay-urun-bg {
+  background-image: url('./terapilerimiz/img/terapi-detay-urun-bg.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.terapi-detay-nav {
+  border-radius: 5px;
+  background: rgba(139, 73, 156, 0.20);
+  color: #FCF8FD;
+}
+
+.terapi-detay-nav .nav-link:focus {
+  color: #FAD277 !important;
+}
+
+.terapi-detay-bubble {
+  border-radius: 15px;
+  border: 2px solid #8B499C;
+  padding: 15px;
+  font-size: 18px;
+  background: rgba(139, 73, 156, 0.20);
+}
+
+.purple-bg {
+  background-color: #533165;
+}
+
+#formcheckWrapper {
+  .form-check {
+    display: flex;
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    white-space: nowrap;
+    border-radius: 5px;
+    background: rgba(139, 73, 156, 0.20);
+    cursor: pointer;
+
+    color: var(--Primary04, #FCF8FD);
+    text-align: center;
+
+    /* Web/P Class Small/Bold */
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    /* 142.857% */
+
+    &:has(input:checked) {
+      color: var(--Secondary03, #FAD277);
+      border: 1px solid var(--Secondary03, #FAD277);
+
+    }
+
+    & label {
+      cursor: pointer;
+    }
+  }
+
+  .form-check-input {
+    display: none;
+  }
 }
