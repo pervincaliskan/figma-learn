@@ -18,9 +18,16 @@ body {
 .text-indigo {
   color: var(--primary-02-action, #8B499C);
 }
+.bg-indigo {
+  color: var(--primary-02-action, #8B499C);
+}
 
 .text-indigo-dark {
   color: var(--primary-00, #382449);
+}
+
+.bg-pink {
+  background-color: #FCF8FD;
 }
 
 .header {
@@ -678,4 +685,44 @@ video {
   .form-check-input {
     display: none;
   }
+}
+
+.kurumsal-bg {
+  background-color: #fff;
+}
+
+.about-us-titles {
+  background: rgba(56, 36, 73, 0.9);
+  border-radius: 0px 15px 0px 15px;
+}
+
+.about-us-titles-icra {
+  background: rgba(56, 36, 73, 0.9);
+  width: inherit;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.terapi-detay-urun-bg {
+  background-image: url('./terapilerimiz/img/terapi-detay-urun-bg.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cozum-detay-urun-bg {
+  background-image: url('./cozumlerimiz/img/cozum-detay-bg.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.text-purple {
+  color: #8B499C;
+}
+
+.text-light-yellow {
+  color: #F2AF29;
+}
+
+.text-light {
+  color: #FCF8FD;
 }
